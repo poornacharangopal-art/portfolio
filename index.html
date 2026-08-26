@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Poorna | Portfolio</title>
-    <link rel="stylesheet" href="portifilo.css">
+
+    <link rel="stylesheet" href="portfolio.css">
 </head>
+
 <body>
 
 <nav>
+
     <div class="logo">Poorna</div>
 
     <ul>
@@ -17,107 +21,396 @@
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
+
 </nav>
+
+
+<!-- ================= HOME ================= -->
 
 <section class="hero" id="home">
 
     <div class="content">
-        <h1>Hi, I'm <span>Poorna</span></h1>
 
-        <h2>MERN Stack Developer</h2>
+        <span class="welcome">
+            Welcome to my portfolio
+        </span>
+
+        <h1>
+            Hi, I'm <span>Poorna</span>
+        </h1>
+
+        <h2>
+            MERN Stack Developer
+        </h2>
 
         <p>
             Passionate Full Stack Developer specializing in
             MongoDB, Express, React and Node.js.
-            I build scalable web applications with elegant UI and
-            efficient backend architecture.
+            I build scalable web applications with elegant UI
+            and efficient backend architecture.
         </p>
 
-        <a href="#projects" class="btn">View My Work</a>
+        <a href="#projects" class="btn">
+            View My Work
+        </a>
+
     </div>
 
 </section>
+
+
+<!-- ================= PROJECTS ================= -->
+
 <section id="projects">
 
-    <h1 class="title">Projects</h1>
+    <div class="section-heading">
+
+        <span class="section-tag">
+            MY WORK
+        </span>
+
+        <h1 class="title">
+            Featured Projects
+        </h1>
+
+        <p>
+            Some of the projects I've built while learning,
+            experimenting and solving real-world problems.
+        </p>
+
+    </div>
+
 
     <div class="cards">
 
-        <div class="card">
-            <div class="status">Currently Working</div>
 
-            <h2>NIT Bazaar</h2>
+        <!-- NIT Bazaar -->
+
+        <div class="card project-card">
+
+            <div class="project-top">
+
+                <div class="project-icon">
+                    🛒
+                </div>
+
+                <span class="status">
+                    Currently Working
+                </span>
+
+            </div>
+
+            <h2>
+                NIT Bazaar
+            </h2>
 
             <p>
-                An e-commerce platform exclusively for NIT students
-                where users can buy and sell products within their
-                respective colleges.
+                An e-commerce platform exclusively for NIT
+                students where users can buy and sell products
+                within their respective colleges.
             </p>
+
+            <div class="tech">
+
+                <span>Node.js</span>
+                <span>Express</span>
+                <span>MongoDB</span>
+                <span>EJS</span>
+
+            </div>
+
+            <button
+                class="view-btn"
+                onclick="openProject('nitbazaar')">
+
+                View Project
+                <span>→</span>
+
+            </button>
 
         </div>
 
-        <div class="card">
 
-            <h2>Email Sender</h2>
+        <!-- Email Sender -->
+
+        <div class="card project-card">
+
+            <div class="project-top">
+
+                <div class="project-icon">
+                    📧
+                </div>
+
+            </div>
+
+            <h2>
+                Email Sender
+            </h2>
 
             <p>
                 A Node.js application that sends emails using
-                Nodemailer with OTP verification and secure authentication.
+                Nodemailer with OTP verification and secure
+                authentication.
             </p>
+
+            <div class="tech">
+
+                <span>Node.js</span>
+                <span>Express</span>
+                <span>Nodemailer</span>
+
+            </div>
+
+            <button
+                class="view-btn"
+                onclick="openProject('email')">
+
+                View Project
+                <span>→</span>
+
+            </button>
 
         </div>
 
-        <div class="card">
 
-            <h2>Dictionary App</h2>
+        <!-- Dictionary -->
+
+        <div class="card project-card">
+
+            <div class="project-top">
+
+                <div class="project-icon">
+                    📖
+                </div>
+
+            </div>
+
+            <h2>
+                Dictionary App
+            </h2>
 
             <p>
-                Search meanings, synonyms, pronunciations and examples
-                using a Dictionary API with a clean user interface.
+                Search meanings, synonyms, pronunciations and
+                examples using a Dictionary API with a clean
+                user interface.
             </p>
+
+            <div class="tech">
+
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>API</span>
+
+            </div>
+
+            <button
+                class="view-btn"
+                onclick="openProject('dictionary')">
+
+                View Project
+                <span>→</span>
+
+            </button>
 
         </div>
 
-        <div class="card">
 
-            <h2>News App</h2>
+        <!-- News App -->
+
+        <div class="card project-card">
+
+            <div class="project-top">
+
+                <div class="project-icon">
+                    📰
+                </div>
+
+            </div>
+
+            <h2>
+                News App
+            </h2>
 
             <p>
                 Displays the latest news headlines from various
                 categories using News APIs with real-time updates.
             </p>
 
+            <div class="tech">
+
+                <span>JavaScript</span>
+                <span>API</span>
+                <span>CSS</span>
+
+            </div>
+
+            <button
+                class="view-btn"
+                onclick="openProject('news')">
+
+                View Project
+                <span>→</span>
+
+            </button>
+
         </div>
 
-        <div class="card">
 
-            <h2>Weather App</h2>
+        <!-- Weather -->
+
+        <div class="card project-card">
+
+            <div class="project-top">
+
+                <div class="project-icon">
+                    🌤️
+                </div>
+
+            </div>
+
+            <h2>
+                Weather App
+            </h2>
 
             <p>
                 Provides current weather, temperature,
                 humidity and forecasts using Weather APIs.
             </p>
 
+            <div class="tech">
+
+                <span>JavaScript</span>
+                <span>API</span>
+                <span>CSS</span>
+
+            </div>
+
+            <button
+                class="view-btn"
+                onclick="openProject('weather')">
+
+                View Project
+                <span>→</span>
+
+            </button>
+
         </div>
 
-        <div class="card">
 
-            <h2>AI Summarizer</h2>
+        <!-- AI -->
+
+        <div class="card project-card">
+
+            <div class="project-top">
+
+                <div class="project-icon">
+                    🤖
+                </div>
+
+            </div>
+
+            <h2>
+                AI Summarizer
+            </h2>
 
             <p>
                 An AI-powered tool that summarizes articles,
                 documents and long texts into concise summaries.
             </p>
 
+            <div class="tech">
+
+                <span>JavaScript</span>
+                <span>Node.js</span>
+                <span>OpenAI</span>
+
+            </div>
+
+            <button
+                class="view-btn"
+                onclick="openProject('ai')">
+
+                View Project
+                <span>→</span>
+
+            </button>
+
         </div>
+
 
     </div>
 
 </section>
 
+
+<!-- ================= PROJECT MODAL ================= -->
+
+<div id="projectModal" class="modal">
+
+    <div class="modal-content">
+
+        <button
+            class="close-btn"
+            onclick="closeProject()">
+
+            ×
+
+        </button>
+
+        <div id="modalIcon" class="modal-icon"></div>
+
+        <h2 id="modalTitle"></h2>
+
+        <p id="modalDescription"></p>
+
+        <div id="modalTech" class="tech"></div>
+
+        <div class="modal-buttons">
+
+            <a
+                id="githubBtn"
+                href="#"
+                target="_blank"
+                class="modal-btn">
+
+                GitHub
+
+            </a>
+
+            <a
+                id="demoBtn"
+                href="#"
+                target="_blank"
+                class="modal-btn primary">
+
+                Live Demo
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ================= SKILLS ================= -->
+
 <section id="skills">
 
-    <h1 class="title">Skills</h1>
+    <div class="section-heading">
+
+        <span class="section-tag">
+            WHAT I KNOW
+        </span>
+
+        <h1 class="title">
+            Skills
+        </h1>
+
+    </div>
+
 
     <div class="skills">
 
@@ -135,27 +428,278 @@
 
 </section>
 
+
+<!-- ================= CONTACT ================= -->
+
 <section id="contact">
 
-    <h1 class="title">Contact Me</h1>
+    <div class="section-heading">
+
+        <span class="section-tag">
+            GET IN TOUCH
+        </span>
+
+        <h1 class="title">
+            Contact Me
+        </h1>
+
+    </div>
+
 
     <form>
 
-        <input type="text" placeholder="Your Name">
+        <input
+            type="text"
+            placeholder="Your Name"
+            required>
 
-        <input type="email" placeholder="Email">
+        <input
+            type="email"
+            placeholder="Email"
+            required>
 
-        <textarea placeholder="Your Message"></textarea>
+        <textarea
+            placeholder="Your Message"
+            required></textarea>
 
-        <button>Send Message</button>
+        <button type="submit">
+            Send Message
+        </button>
 
     </form>
 
 </section>
 
+
 <footer>
+
     © 2026 Poorna. All Rights Reserved.
+
 </footer>
+
+
+<script>
+
+const projects = {
+
+    nitbazaar: {
+
+        title: "NIT Bazaar",
+
+        icon: "🛒",
+
+        description:
+            "An e-commerce platform exclusively for NIT students where users can buy and sell products within their respective colleges.",
+
+        technologies:
+            ["Node.js", "Express", "MongoDB", "EJS"],
+
+        github: "#",
+
+        demo: "#"
+
+    },
+
+
+    email: {
+
+        title: "Email Sender",
+
+        icon: "📧",
+
+        description:
+            "A Node.js application that sends emails using Nodemailer with OTP verification and authentication.",
+
+        technologies:
+            ["Node.js", "Express", "Nodemailer"],
+
+        github: "#",
+
+        demo: "#"
+
+    },
+
+
+    dictionary: {
+
+        title: "Dictionary App",
+
+        icon: "📖",
+
+        description:
+            "A dictionary application that provides meanings, synonyms, pronunciations and examples using an external API.",
+
+        technologies:
+            ["HTML", "CSS", "JavaScript", "API"],
+
+        github: "#",
+
+        demo: "#"
+
+    },
+
+
+    news: {
+
+        title: "News App",
+
+        icon: "📰",
+
+        description:
+            "A news application that displays the latest headlines from different categories using APIs.",
+
+        technologies:
+            ["JavaScript", "API", "CSS"],
+
+        github: "#",
+
+        demo: "#"
+
+    },
+
+
+    weather: {
+
+        title: "Weather App",
+
+        icon: "🌤️",
+
+        description:
+            "A weather application providing current temperature, humidity and weather information using an API.",
+
+        technologies:
+            ["JavaScript", "API", "CSS"],
+
+        github: "#",
+
+        demo: "#"
+
+    },
+
+
+    ai: {
+
+        title: "AI Summarizer",
+
+        icon: "🤖",
+
+        description:
+            "An AI-powered application that summarizes long articles, documents and text into concise summaries.",
+
+        technologies:
+            ["JavaScript", "Node.js", "OpenAI"],
+
+        github: "#",
+
+        demo: "#"
+
+    }
+
+};
+
+
+function openProject(projectName) {
+
+    const project = projects[projectName];
+
+    document.getElementById("modalIcon").innerText =
+        project.icon;
+
+    document.getElementById("modalTitle").innerText =
+        project.title;
+
+    document.getElementById("modalDescription").innerText =
+        project.description;
+
+
+    const techContainer =
+        document.getElementById("modalTech");
+
+    techContainer.innerHTML = "";
+
+
+    project.technologies.forEach((technology) => {
+
+        const span =
+            document.createElement("span");
+
+        span.innerText = technology;
+
+        techContainer.appendChild(span);
+
+    });
+
+
+    document.getElementById("githubBtn").href =
+        project.github;
+
+    document.getElementById("demoBtn").href =
+        project.demo;
+
+
+    document.getElementById("projectModal")
+        .classList.add("active");
+
+}
+
+
+function closeProject() {
+
+    document.getElementById("projectModal")
+        .classList.remove("active");
+
+}
+
+
+window.onclick = function(event) {
+
+    const modal =
+        document.getElementById("projectModal");
+
+    if(event.target === modal) {
+
+        closeProject();
+
+    }
+
+};
+
+
+// Scroll reveal animation
+
+const cards =
+    document.querySelectorAll(".project-card");
+
+
+const observer =
+    new IntersectionObserver(
+        (entries) => {
+
+            entries.forEach((entry) => {
+
+                if(entry.isIntersecting) {
+
+                    entry.target.classList.add("show");
+
+                }
+
+            });
+
+        },
+        {
+            threshold: 0.15
+        }
+    );
+
+
+cards.forEach((card) => {
+
+    observer.observe(card);
+
+});
+
+</script>
+
 
 </body>
 </html>
